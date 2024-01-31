@@ -124,7 +124,7 @@ Pour ce faire, il faudra créer une fonction assignable à un élement hmtl / co
 Vous pouvez utiliser le code suivant afin d'ajouter un élement à la liste:
 
 ```TypeScript
-let test: ToDo {
+let test: ToDo = {
 ...
 }
 
