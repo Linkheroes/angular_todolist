@@ -98,6 +98,8 @@ export interface ToDo {
 }
 ```
 
+Une interface est un équivalent au strucutre en C mais ça ne fonctionne pas toute à fait pareil.
+
 ## Step 7 : Associer les composants
 
 Maintenant que nous avons nos Composant et notre interface, il faut les associer afin de créer la todo et de l'afficher.
