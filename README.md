@@ -106,7 +106,7 @@ Maintenant que nous avons nos Composant et notre interface, il faut les associer
 
 Vous pouvez utiliser le code suivant sur une balise html pour répliquer votre component "todo" dans votre "app.component.html".
 
-Il faudra importer dans le "app.component.ts" "CommonModule".
+Le *ngFor à besoin pour fonctionner d'un import nommé "CommonModule" qui devra être importé dans le fichier "app.component.ts".
 
 ```TypeScript
 *ngFor="..."
