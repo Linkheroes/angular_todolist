@@ -50,7 +50,7 @@ cd my_todolist
 
 ## Step 3 : Compréhension de l'architecture du projet
 
-Angular est un framework web en TypeScript, chaque page/component sont composé de la façon suivante :
+Angular est un framework web en TypeScript, chaque page/component sont composés de la façon suivante :
 
 ```
 - app.component.html --> pour la partie visuel du site en html
@@ -69,7 +69,7 @@ npm run start
 
 ## Step 5 : Créer de nouveaux composants
 
-Il est l'heure de créer nos premiers composants. Pour cela, nous allons utiliser la commande suivante :
+Il est l'heure de créer nos premiers composant. Pour cela, nous allons utiliser la commande suivante :
 
 ```bash
 ng generate component todo
@@ -89,7 +89,7 @@ Vous pouvez passer des input à votre component en ajoutant ce code dans votre c
 
 ## Step 6 : Créer une interface
 
-Après avoir créer vos composants, il faut maintenant créer le tableau qui va acceuillir vos todo dans un nouveau fichier qu'on appellera "utils.ts" à la racine du dossier src/app.
+Après avoir créé vos composants, il faut maintenant créer le tableau qui va acceuillir vos todo dans un nouveau fichier qu'on appellera "utils.ts" à la racine du dossier src/app.
 Pour faire ça vous pouvez utiliser le code suivant :
 
 ```TypeScript
@@ -98,20 +98,39 @@ export interface ToDo {
 }
 ```
 
-Une interface est un équivalent au strucutre en C mais ça ne fonctionne pas toute à fait pareil.
+Une interface est un équivalent au strucutre en C mais ça ne fonctionne pas tout à fait pareil.
+
+Il suffira de déclarer la liste comme suit dans le fichier ``app.component.ts`` :
+
+```TypeScript
+todoList: ToDo[] = [];
+```
 
 ## Step 7 : Associer les composants
 
-Maintenant que nous avons nos Composant et notre interface, il faut les associer afin de créer la todo et de l'afficher.
+Maintenant que nous avons nos composants et notre interface, il faut les associer afin de créer la todo et de l'afficher.
 
 Vous pouvez utiliser le code suivant sur une balise html pour répliquer votre component "todo" dans votre "app.component.html".
-
-Le *ngFor à besoin pour fonctionner d'un import nommé "CommonModule" qui devra être importé dans le fichier "app.component.ts".
 
 ```TypeScript
 *ngFor="..."
 ```
+Le *ngFor à besoin pour fonctionner d'un import nommé "CommonModule" qui devra être importé dans le fichier "app.component.ts".
 
-## Step 8 : Laisser parler votre imagination
+## Step 8 : Ajouter dans la liste
 
-Vous avez finis la base du workshop maintenant rendez votre todo list unique
+Pour ce faire, il faudra créer une fonction assignable à un élement hmtl / component avec la propriété ``(click)=""``.
+
+Vous pouvez utiliser le code suivant afin d'ajouter un élement à la liste:
+
+```TypeScript
+let test: ToDo {
+...
+}
+
+this.todoList.push(test);
+```
+
+## Step 9 : Laissez parler votre imagination
+
+Vous avez finis la base du workshop! Maintenant rendez votre todo list unique en ajoutant des fonctions pour les modifier, supprimer, classifier par type/importance.
