@@ -89,7 +89,7 @@ Vous pouvez passer des input à votre component en ajoutant ce code dans votre c
 
 ## Step 6 : Créer une interface
 
-Après avoir créer vos composants, il faut maintenant créer le tableau qui va acceuillir vos todo.
+Après avoir créer vos composants, il faut maintenant créer le tableau qui va acceuillir vos todo dans un nouveau fichier qu'on appellera "utils.ts" à la racine du dossier src/app.
 Pour faire ça vous pouvez utiliser le code suivant :
 
 ```TypeScript
@@ -102,7 +102,9 @@ export interface ToDo {
 
 Maintenant que nous avons nos Composant et notre interface, il faut les associer afin de créer la todo et de l'afficher.
 
-Vous pouvez utiliser le code suivant sur une balise html pour répliquer votre component "todo" dans votre "app.component.html"
+Vous pouvez utiliser le code suivant sur une balise html pour répliquer votre component "todo" dans votre "app.component.html".
+
+Il faudra importer dans le "app.component.ts" "CommonModule".
 
 ```TypeScript
 *ngFor="..."
