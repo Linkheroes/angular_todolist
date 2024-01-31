@@ -36,7 +36,7 @@ Télécharger la dernière version dite LTS sur le lien suivant [nodejs.org](htt
 
 ```bash
 sudo npm install -g @angular/cli
-ng --version
+ng version
 ```
 
 ## Step 2 : Créer le projet
