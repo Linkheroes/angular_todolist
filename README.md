@@ -2,7 +2,7 @@
 
 ## Step 1 : Requierements
 
-### Installer NodeJS on Fedora
+### Installer NodeJS sur Fedora
 
 ```bash
 sudo dnf install -y gcc-c++ make
@@ -11,14 +11,14 @@ sudo dnf install nodejs
 node -v
 ```
 
-### Installer NodeJS on Arch
+### Installer NodeJS sur Arch
 
 ```bash
 sudo pacman -S nodejs
 node -v
 ```
 
-### Installer NodeJS on Unbutu
+### Installer NodeJS sur Unbutu
 
 ```bash
 cd ~
@@ -30,7 +30,7 @@ node -v
 
 ### Installer NodeJS sur Windows ou MacOS
 
-Download the LTS version on this [link](https://nodejs.org/en)
+Télécharger la dernière version dite LTS sur le lien suivant [nodejs.org](https://nodejs.org/en)
 
 ### Installer Angular CLI
 
